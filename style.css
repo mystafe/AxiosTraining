@@ -1,0 +1,86 @@
+.addSupplier {
+  display: flex;
+  flex-direction: column;
+}
+
+.supplierDiv {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+
+#addSupplierDiv,
+#deleteSupplierDiv {
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #ccc;
+  margin-right: 10px;
+  padding: 10px;
+}
+#addSupplierDiv label,
+#deleteSupplierDiv label {
+  color: #3f1c1c;
+  font-size: small;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.supplierContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+label {
+  margin-right: 10px;
+  width: 100px;
+}
+
+input {
+  width: 200px;
+}
+
+.button {
+  background-color: rgb(78, 127, 219);
+  color: white;
+  border: 2px solid rgb(158, 154, 154);
+  padding: 5px;
+  padding-right: 50px;
+  font-size: medium;
+
+  margin: 5px 50px 5px 5px;
+
+  cursor: pointer;
+}
+.button:hover {
+  background-color: rgb(38, 027, 119);
+  color: white;
+}
+#listSupplier {
+  background-color: rgb(81, 182, 81);
+}
+#deleteSupplier {
+  background-color: rgb(157, 55, 55);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+  text-align: left;
+}
+
+thead th {
+  background-color: #f9f9f9;
+  font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}

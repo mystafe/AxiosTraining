@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Axios Training</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <h1>Axios Training</h1>
+    <hr />
+
+    <div class="supplierContainer">
+      <div id="addSupplierDiv">
+        <h2>Add Supplier</h2>
+
+        <div class="supplierDiv">
+          <label for="">Contact Name:</label>
+          <input type="text" id="contactName" />
+        </div>
+
+        <div class="supplierDiv">
+          <label for="">Company Name:</label>
+          <input type="text" id="companyName" />
+        </div>
+        <div class="supplierDiv">
+          <label for="">contact Title:</label>
+          <input type="text" id="contactTitle" />
+        </div>
+      </div>
+
+      <div id="deleteSupplierDiv">
+        <h2>Delete Supplier</h2>
+
+        <div class="supplierDiv">
+          <label for="">Id:</label>
+          <input type="text" id="supplierId" />
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="buttons">
+      <button id="addSupplier" class="button" onclick="addData()">
+        Add Supplier
+      </button>
+      <button id="listSupplier" class="button" onclick="loadData()">
+        List Suppliers
+      </button>
+      <button id="deleteSupplier" class="button" onclick="deleteData()">
+        Delete Supplier
+      </button>
+    </div>
+
+    <hr />
+    <h2>Supplier List</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Contact Name</th>
+          <th>Company Name</th>
+          <th>Contact</th>
+        </tr>
+      </thead>
+      <tbody id="suppliers"></tbody>
+    </table>
+
+    <hr />
+
+    <script src="script.js"></script>
+  </body>
+</html>
