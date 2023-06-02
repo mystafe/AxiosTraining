@@ -10,16 +10,14 @@
   margin-right: 20px;
 }
 
-#addSupplierDiv,
-#deleteSupplierDiv {
+.axiosOperationBox {
   border: 1px solid black;
   border-radius: 5px;
   background-color: #ccc;
   margin-right: 10px;
   padding: 10px;
 }
-#addSupplierDiv label,
-#deleteSupplierDiv label {
+.axiosOperationBox label {
   color: #3f1c1c;
   font-size: small;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -48,18 +46,27 @@ input {
   padding-right: 50px;
   font-size: medium;
 
-  margin: 5px 50px 5px 5px;
-
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  width: 80%;
   cursor: pointer;
 }
 .button:hover {
   background-color: rgb(38, 027, 119);
   color: white;
 }
+
+.listButton {
+  width: 40%;
+}
 #listSupplier {
   background-color: rgb(81, 182, 81);
 }
-#deleteSupplier {
+#deleteSupplier,
+#deleteTodo {
+  margin: auto;
+  margin-top: 60px;
   background-color: rgb(157, 55, 55);
 }
 
@@ -83,4 +90,16 @@ thead th {
 
 tbody tr:nth-child(even) {
   background-color: #f2f2f2;
+}
+
+#tables {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+.table-div {
+  padding: 5px;
+  width: 50%;
+  overflow-x: auto;
 }

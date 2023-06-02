@@ -13,7 +13,7 @@
     <hr />
 
     <div class="supplierContainer">
-      <div id="addSupplierDiv">
+      <div id="addSupplierDiv" class="axiosOperationBox">
         <h2>Add Supplier</h2>
 
         <div class="supplierDiv">
@@ -29,46 +29,113 @@
           <label for="">contact Title:</label>
           <input type="text" id="contactTitle" />
         </div>
+
+        <div class="supplierDiv">
+          <button id="addSupplier" class="button" onclick="addSupplier()">
+            Add Supplier
+          </button>
+        </div>
       </div>
 
-      <div id="deleteSupplierDiv">
+      <div id="deleteSupplierDiv" class="axiosOperationBox">
         <h2>Delete Supplier</h2>
 
         <div class="supplierDiv">
           <label for="">Id:</label>
           <input type="text" id="supplierId" />
         </div>
+
+        <div class="supplierDiv">
+          <button id="deleteSupplier" class="button" onclick="deleteSupplier()">
+            Delete Supplier
+          </button>
+        </div>
+      </div>
+
+      <div id="deleteTodoDiv" class="axiosOperationBox">
+        <h2>Delete Todo</h2>
+
+        <div class="supplierDiv">
+          <label for="">Id:</label>
+          <input type="text" id="todoId" />
+        </div>
+
+        <div class="supplierDiv">
+          <button id="deleteTodo" class="button" onclick="deleteTodo()">
+            Delete Todo
+          </button>
+        </div>
+      </div>
+
+      <div id="addTodoDiv" class="axiosOperationBox">
+        <h2>Add Todo</h2>
+
+        <div class="supplierDiv">
+          <label for="">Title:</label>
+          <input type="text" id="todoTitle" />
+        </div>
+
+        <div class="supplierDiv">
+          <label for="">Completed:</label>
+          <input type="checkbox" id="todoCompleted" />
+        </div>
+
+        <div class="supplierDiv">
+          <button id="addTodo" class="button" onclick="addTodo()">
+            Add Todo
+          </button>
+        </div>
       </div>
     </div>
 
-    <hr />
-
     <div class="buttons">
-      <button id="addSupplier" class="button" onclick="addData()">
-        Add Supplier
-      </button>
-      <button id="listSupplier" class="button" onclick="loadData()">
+      <button
+        id="listSupplier"
+        class="button listButton"
+        onclick="loadSupplier()"
+      >
         List Suppliers
       </button>
-      <button id="deleteSupplier" class="button" onclick="deleteData()">
-        Delete Supplier
+      <button id="listTodos" class="button listButton" onclick="loadTodos()">
+        List Todos
       </button>
     </div>
 
     <hr />
-    <h2>Supplier List</h2>
+    <div id="tables">
+      <div id="supplierTable" class="table-div">
+        <h2>Supplier List</h2>
+        <div id="totalSupplier"><p>Total Supplier:&nbsp;</p></div>
+        <table>
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Contact Name</th>
+              <th>Company Name</th>
+              <th>Contact</th>
+            </tr>
+          </thead>
+          <tbody id="suppliers"></tbody>
+        </table>
+      </div>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Id</th>
-          <th>Contact Name</th>
-          <th>Company Name</th>
-          <th>Contact</th>
-        </tr>
-      </thead>
-      <tbody id="suppliers"></tbody>
-    </table>
+      <div id="todosTable" class="table-div">
+        <h2>Todo List</h2>
+
+        <div id="totalTodo"><p>Total Todo:&nbsp;</p></div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Title</th>
+              <th>Completed</th>
+            </tr>
+          </thead>
+          <tbody id="todos"></tbody>
+        </table>
+      </div>
+    </div>
 
     <hr />
 
